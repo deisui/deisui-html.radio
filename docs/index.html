@@ -149,5 +149,11 @@
         C507.3,493.1,509.6,490.4,509.6,486.4z"/>
     </g>
   </svg>
+  <script>
+    const currentHour = new Date().getHours();
+    if (currentHour < 5 || currentHour > 18) {
+      document.documentElement.classList.add("js-dark-mode");
+    }
+  </script>
 </body>
 </html>
