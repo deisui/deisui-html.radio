@@ -42,6 +42,17 @@
         max-height: 600px;
         min-width: 300px;
         min-height: 300px;
+        opacity: 0;
+        animation: fadeIn 3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s forwards;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
       .js-dark-mode #logo__kanji,
       .js-dark-mode #logo__hash,
       .js-dark-mode #logo__dhm {
