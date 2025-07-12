@@ -32,7 +32,7 @@
         color: #13335d;
         background-color: #f0f0f0;
       }
-      .js-dark-mode body {
+      .-dark body {
         background-color: #13335D;
       }
       #logo {
@@ -53,8 +53,8 @@
           opacity: 1;
         }
       }
-      .js-dark-mode #logo__kanji,
-      .js-dark-mode #logo__dhm {
+      .-dark #logo__kanji,
+      .-dark #logo__dhm {
         fill: #ffffff;
       }
     </style>
@@ -169,7 +169,7 @@
   <script>
     const currentHour = new Date().getHours();
     if (currentHour < 5 || currentHour > 18) {
-      document.documentElement.classList.add("js-dark-mode");
+      document.documentElement.classList.add("-dark");
     }
   </script>
 </body>
